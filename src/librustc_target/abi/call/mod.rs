@@ -30,6 +30,7 @@ mod x86;
 mod x86_64;
 mod x86_win64;
 mod wasm32;
+mod xtensa;
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum PassMode {
@@ -498,6 +499,7 @@ impl<'a, Ty> FnType<'a, Ty> {
             "nvptx" => nvptx::compute_abi_info(self),
             "nvptx64" => nvptx64::compute_abi_info(self),
             "hexagon" => hexagon::compute_abi_info(self),
+            "xtensa" => xtensa::compute_abi_info(self),
             a => return Err(format!("unrecognized arch \"{}\" in target specification", a))
         }
 

@@ -82,7 +82,7 @@ fn main() {
 
     let mut optional_components =
         vec!["x86", "arm", "aarch64", "mips", "powerpc",
-             "systemz", "jsbackend", "webassembly", "msp430", "sparc", "nvptx"];
+             "systemz", "jsbackend", "webassembly", "msp430", "sparc", "nvptx", "xtensa"];
 
     let mut version_cmd = Command::new(&llvm_config);
     version_cmd.arg("--version");
