@@ -8,7 +8,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-use spec::{Abi, LinkerFlavor, PanicStrategy, Target, TargetOptions, TargetResult};
+use spec::{LinkerFlavor, PanicStrategy, Target, TargetOptions, TargetResult};
 
 pub fn target() -> TargetResult {
     Ok(Target {
